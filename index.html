@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plix Beauty | Premium Skincare</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 3. Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Plix Beauty</a>
+            
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-icons">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="mobile-menu" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup" id="cartPopup">
+        <h3>Your Cart</h3>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotalValue">$0.00</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <!-- 1. Homepage / Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Glow Naturally, <br> Live Beautifully.</h1>
+            <p>Discover our plant-based, cruelty-free skincare collection designed to nourish your skin and soul.</p>
+            <a href="#products" class="cta-button">Shop the Collection</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="about" class="benefits">
+        <div class="benefit-item">
+            <i class="fas fa-leaf"></i>
+            <h3>Plant-Based</h3>
+            <p>100% natural ingredients</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-paw"></i>
+            <h3>Cruelty-Free</h3>
+            <p>Never tested on animals</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-recycle"></i>
+            <h3>Eco-Friendly</h3>
+            <p>Sustainable packaging</p>
+        </div>
+    </section>
+
+    <!-- 2. Products Section -->
+    <section id="products" class="products">
+        <h2 class="section-title">Our Bestsellers</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rose Hydration Mist">
+                    <button class="add-to-cart" data-id="1" data-name="Rose Hydration Mist" data-price="28.00">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h3>Rose Hydration Mist</h3>
+                    <p class="price">$28.00</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vitamin C Serum">
+                    <button class="add-to-cart" data-id="2" data-name="Vitamin C Serum" data-price="45.00">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h3>Vitamin C Serum</h3>
+                    <p class="price">$45.00</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Soothing Clay Mask">
+                    <button class="add-to-cart" data-id="3" data-name="Soothing Clay Mask" data-price="32.00">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h3>Soothing Clay Mask</h3>
+                    <p class="price">$32.00</p>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nourishing Face Oil">
+                    <button class="add-to-cart" data-id="4" data-name="Nourishing Face Oil" data-price="55.00">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h3>Nourishing Face Oil</h3>
+                    <p class="price">$55.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Plix Beauty has completely transformed my skin. The Vitamin C serum is a game changer! My skin feels so nourished."</p>
+                <h4>- Sarah M.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I love that everything is cruelty-free and smells amazing. The Rose Mist is my daily essential. Highly recommend!"</p>
+                <h4>- Elena R.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Join the Plix Community</h2>
+            <p>Subscribe for skincare tips, early access to new launches, and 10% off your first order.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 4. Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Plix Beauty</a>
+                <p>Premium, plant-based skincare for the modern glow. Feel beautiful every day.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Shop</h4>
+                    <a href="#">All Products</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+                <div class="link-group">
+                    <h4>About</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Ingredients</a>
+                    <a href="#">Sustainability</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="link-group">
+                    <h4>Help</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Track Order</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Plix Beauty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
